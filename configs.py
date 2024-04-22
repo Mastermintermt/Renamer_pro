@@ -10,8 +10,12 @@ logging.basicConfig(
     level=logging.INFO
 )
 
+def is_enabled(value, default):
+    if value.strip().lower() in ["on", "true", "yes", "1", "enable", "y"]: return True
+    elif value.strip().lower() in ["off", "false", "no", "0", "disable", "n"]: return False
+    else: return default
 
-class Config(object):
+
     API_ID = int(os.environ.get("API_ID", "20919286"))
     API_HASH = os.environ.get("API_HASH", "57b85f72104db3f08f9795b0410eb556")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "7101381082:AAGQQrFIDpGgSyi_voDJ-JoTv4hRIPmwRo0")
