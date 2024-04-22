@@ -1,1 +1,1 @@
-web: python configs.py
+web:python3 -m bot
