@@ -1,1 +1,1 @@
-web: python3 configs.py
+web: python configs.py
