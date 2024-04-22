@@ -1,5 +1,5 @@
 from pyrogram import Client
-from configs import *
+from configs import API_ID,API_HASH,BOT_TOKEN,LOG_CHANNEL,MONGODB_URI,PRO_USERS,OWNER_ID
 from route import web_server
 from aiohttp import web
 
